@@ -10,9 +10,10 @@ function displayJoke(response) {
 function generateJoke(event) {
   event.preventDefault();
   let apiKey = "2dbe7af4434o3f6bf61f8t7c0caf3496";
-  let context = "Tell me a short joke about cats";
+  let context =
+    "Act as the comedian Taylor Tomlinson. Come up with funny cat-related jokes. Think of some clever puns, observations, and humorous situations related to cats.";
   let prompt =
-    "You're a comedian who loves making intellignet, subtle, witty jokes and puns. Make this joke original and something that could make laugh even the most cynical person. Make the jokes as dark as you can";
+    "Act as the comedian Taylor Tomlinson. Come up with funny cat-related jokes. Think of some clever puns, observations, and humorous situations related to cats.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let joke = document.querySelector("#joke");
 
